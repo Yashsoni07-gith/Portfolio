@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yash Soni | Frontend Developer</title>
+  <meta name="description" content="Yash Soni is a Frontend Developer and Computer Science Engineering student specializing in AI & Machine Learning, building modern, interactive web experiences.">
+  <meta name="author" content="Yash Soni">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yash Soni | Frontend Developer">
+  <meta property="og:description" content="Frontend Developer & CSE student building modern, interactive web experiences.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:url" content="https://yashsoni07-gith.github.io/">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-logo">YS<span style="color:yellowgreen;">.</span></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo magnetic" aria-label="Yash Soni home">YS<span style="color:yellowgreen;">.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-small magnetic nav-cta">Let's Talk</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="grid-bg"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <span class="float-shape shape-1"></span>
+        <span class="float-shape shape-2"></span>
+        <span class="float-shape shape-3"></span>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow reveal">FRONTEND DEVELOPER · COMPUTER SCIENCE STUDENT</p>
+
+          <h1 class="hero-title">
+            <span class="line"><span class="reveal-text">Building digital experiences</span></span>
+            <span class="line"><span class="reveal-text">with <em class="accent">code</em> &amp;</span></span>
+            <span class="line"><span class="reveal-text"><em class="accent">creativity</em>.</span></span>
+          </h1>
+
+          <p class="hero-intro reveal">
+            Hi, I'm <strong>Yash Soni</strong> — a Frontend Developer crafting interactive,
+            visually engaging interfaces with HTML, CSS, JavaScript and TypeScript.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
+            <a href="assets/resume/resume.pdf" class="btn btn-ghost magnetic" download>Download Resume</a>
+          </div>
+
+          <div class="availability reveal">
+            <span class="pulse-dot"></span>
+            <span>Open to frontend internship opportunities</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame tilt" data-tilt>
+            <img src="assets/images/profile.jpg" alt="Portrait of Yash Soni, Frontend Developer" width="400" height="500">
+          </div>
+          <div class="float-card card-badge float-a">
+            <span class="badge-label">Stack</span>
+            <span class="badge-value">HTML · CSS · JS · TS</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal-left">
+          <div class="photo-frame tilt" data-tilt>
+            <img src="assets/images/profile.jpg" alt="Yash Soni profile photo" width="400" height="500" loading="lazy">
+          </div>
+          <div class="deco deco-1"></div>
+          <div class="deco deco-2"></div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="section-label">01 — About Me</p>
+          <h2 class="section-title">A developer who learns by <em class="accent">building</em>.</h2>
+
+          <p class="about-text">
+            I'm Yash Soni, a Frontend Developer and Computer Science Engineering student specializing in AI &amp; Machine Learning.
+          </p>
+          <p class="about-text">
+            I enjoy transforming ideas into interactive, visually engaging, and user-friendly web experiences. My development journey focuses on building modern interfaces using HTML, CSS, JavaScript, and TypeScript while continuously exploring new technologies and improving my problem-solving skills.
+          </p>
+          <p class="about-text">
+            I believe in learning by building, experimenting with creative ideas, and writing code that delivers meaningful experiences. I'm always looking for opportunities to collaborate, contribute to exciting projects, and grow as a developer.
+          </p>
+
+          <div class="info-cards stagger">
+            <div class="info-card">
+              <span class="info-label">Education</span>
+              <span class="info-value">B.Tech CSE (AI/ML)</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">University</span>
+              <span class="info-value">Shri Vaishnav Vidyapeeth Vishwavidyalaya</span>
+            </div>
+            <div class="info-card">
+              <span class="info-label">Location</span>
+              <span class="info-value">Indore, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">02 — Skills</p>
+          <h2 class="section-title">Tools of the <em class="accent">trade</em>.</h2>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-group reveal" data-group="Languages">
+            <h3 class="group-title"><span class="group-index">A</span>Languages</h3>
+            <ul class="skill-list stagger">
+              <li class="skill-chip magnetic-chip">HTML</li>
+              <li class="skill-chip magnetic-chip">CSS</li>
+              <li class="skill-chip magnetic-chip">JavaScript</li>
+              <li class="skill-chip magnetic-chip">TypeScript</li>
+              <li class="skill-chip magnetic-chip">C++</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" data-group="Frameworks">
+            <h3 class="group-title"><span class="group-index">B</span>Frameworks</h3>
+            <ul class="skill-list stagger">
+              <li class="skill-chip magnetic-chip">Tailwind CSS</li>
+              <li class="skill-chip magnetic-chip">Bootstrap</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" data-group="Tools">
+            <h3 class="group-title"><span class="group-index">C</span>Tools</h3>
+            <ul class="skill-list stagger">
+              <li class="skill-chip magnetic-chip">Git</li>
+              <li class="skill-chip magnetic-chip">GitHub</li>
+              <li class="skill-chip magnetic-chip">VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">03 — Featured Project</p>
+          <h2 class="section-title">Selected <em class="accent">work</em>.</h2>
+        </div>
+
+        <!-- To add more projects later, duplicate an <article class="project-card"> block -->
+        <div class="project-list">
+          <article class="project-card reveal" data-tilt>
+            <div class="project-preview">
+              <div class="preview-placeholder">
+                <span class="preview-code">&lt;/&gt;</span>
+                <span class="preview-label">PARAKH</span>
+              </div>
+              <div class="preview-overlay">
+                <a href="https://yashsoni07-gith.github.io/Parakh-Web-App/" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">Live Demo ↗</a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <p class="project-index">01</p>
+              <h3 class="project-title">PARAKH Intelligence Engine</h3>
+              <p class="project-desc">
+                A modern web-based Digital Intelligence Platform that transforms fragmented digital evidence into actionable insights. It supports automated relationship mapping, entity connection tracking, and anomaly detection through an intuitive dashboard.
+              </p>
+
+              <ul class="tech-badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="https://yashsoni07-gith.github.io/Parakh-Web-App/" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic">Live Demo ↗</a>
+                <a href="https://github.com/Yashsoni07-gith/Parakh-Web-App" target="_blank" rel="noopener noreferrer" class="btn btn-ghost magnetic">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-bg">
+        <div class="glow glow-3"></div>
+        <div class="grid-bg grid-faint"></div>
+      </div>
+
+      <div class="container contact-inner">
+        <p class="section-label reveal">04 — Contact</p>
+        <h2 class="contact-title reveal">
+          <span class="line"><span class="reveal-text">Let's build something</span></span>
+          <span class="line"><span class="reveal-text"><em class="accent">meaningful</em> together.</span></span>
+        </h2>
+        <p class="contact-text reveal">
+          I'm always interested in exploring new ideas, collaborating on projects, and connecting with people in the tech community.
+        </p>
+
+        <div class="contact-actions reveal">
+          <a href="mailto:yashsoni07.1212@gmail.com" class="btn btn-primary btn-large magnetic">Email Me</a>
+          <a href="https://github.com/Yashsoni07-gith" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-large magnetic">GitHub</a>
+          <a href="https://www.linkedin.com/in/yash-soni-487a9136b/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-large magnetic">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo magnetic" aria-label="Back to top">YS<span>.</span></a>
+      <p class="footer-text">Designed &amp; Developed by <strong>Yash Soni</strong></p>
+      <div class="footer-links">
+        <a href="https://github.com/Yashsoni07-gith" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yash-soni-487a9136b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:yashsoni07.1212@gmail.com">Email</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Yash Soni</p>
+    </div>
+  </footer>
+
+  <script src="Javascript/script.js"></script>
+</body>
+</html>

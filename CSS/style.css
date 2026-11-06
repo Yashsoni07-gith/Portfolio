@@ -1205,7 +1205,7 @@ body.cursor-ready .cursor-ring {
 }
 
 @media (max-width: 600px) {
-  
+
   .scroll-indicator {
   display: none;
 }
@@ -1253,5 +1253,125 @@ body.cursor-ready .cursor-ring {
   .reveal-text {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* ==========================================================
+   REFINEMENT: calmer theme + layout + Android fixes
+   ========================================================== */
+
+:root {
+  --accent: #BFFF00;
+  --bg-primary: #0A0A0A;
+  --bg-card: #121212;
+  --text-secondary: #9A9A9A;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+/* Calmer hero: no glows or floating shapes */
+.hero-bg .glow,
+.hero-bg .float-shape,
+.deco { display: none; }
+
+.hero-bg .grid-bg {
+  opacity: 0.35;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
+}
+
+.hero-visual .photo-frame {
+  width: min(360px, 100%);
+  border-radius: 20px;
+}
+
+.photo-frame img {
+  filter: none;
+}
+
+.photo-frame:hover img {
+  transform: scale(1.03);
+}
+
+/* Section spacing */
+.section { padding-block: 5.5rem; }
+
+/* ---------- Android and small screens ---------- */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-h) + 2.5rem);
+    padding-bottom: 5rem;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual { order: -1; }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .about-grid { grid-template-columns: 1fr; }
+
+  .nav-links.open {
+    background: #0A0A0A;
+    backdrop-filter: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 2.5rem);
+  }
+
+  .hero-actions,
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .contact-actions .btn,
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .hero-intro {
+    font-size: 1rem;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    min-height: 200px;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
   }
 }
